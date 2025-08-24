@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+	<title>BLU Checklist</title>
+	<link rel="stylesheet" href="assets/blu.css" />
+</head>
+
+<body style="background-color: #ccc;">
+<div id="divSideBar" class="sidebar">
+	<div class="buttonPadding">
+		<button onclick="toggleMode()">Toggle Grid Checklist</button>
+	</div>
+	
+	<div id="divSidebarBottom" style="position: absolute; bottom: 0; left: 0; margin-bottom: 20px">
+		<div class="buttonPadding">
+			<button onclick="clearAll()">Clear All</button>
+		</div>
+		<div class="buttonPadding">
+			<button onclick="selectAll()">Select All</button>
+		</div>
+	</div>
+</div>
+
+<div id="divGrid" class="outer-container" style="display:none;">
+	<div class="inner-container">
+		<div id="radio"></div> 
+		<br>
+		<div class="centered-content">
+			<table cellspacing="0" class="text-center border grid" id="spellsGrid">
+				<tr>
+					<td id="c1"></td>
+					<td id="c2"></td>
+					<td id="c3"></td>
+					<td id="c4"></td>
+				</tr>
+				<tr>
+					<td id="c5"></td>
+					<td id="c6"></td>
+					<td id="c7"></td>
+					<td id="c8"></td>
+				</tr>
+				<tr>
+					<td id="c9"></td>
+					<td id="c10"></td>
+					<td id="c11"></td>
+					<td id="c12"></td>
+				</tr>
+				<tr>
+					<td id="c13"></td>
+					<td id="c14"></td>
+					<td id="c15"></td>
+					<td id="c16"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+<div id="divSpells" style="float:left; clear: left; margin-left: 150px;">
+	<table cellspacing="0" class="border list" id="spells" style="margin:auto;">
+		<tr id="tr0" class="header">
+			<td></td>
+			<td>#</td>
+			<td>Spell</td>
+			<td>How to get</td>
+			<td>Notes</td>
+		</tr>
+	</table>
+</div>
+<!-- ************************************************************************** -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="assets/blu.js"></script>
+</body>
+</html>
